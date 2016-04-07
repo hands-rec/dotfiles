@@ -8,7 +8,7 @@ DOT_FILES=( .vimrc )
 
 for file in ${DOT_FILES[@]}
 do
-  echo '   $file'
+  echo "   $file"
   ln -s $HOME/dotfiles/$file $HOME/$file
 done
 echo '-------------------------'
