@@ -1,11 +1,18 @@
 #!/bin/bash
 
+#
+# Setup Link
+# 
+echo 'Setup Link ----------'
 DOT_FILES=( .vimrc )
 
 for file in ${DOT_FILES[@]}
 do
+  echo '   $file'
   ln -s $HOME/dotfiles/$file $HOME/$file
 done
+echo '-------------------------'
+echo '' 
 
 # 
 # NeoBunele
@@ -15,3 +22,4 @@ echo 'Install NeoBundle -------'
 mkdir -p ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 echo '-------------------------'
+echo '' 
