@@ -21,19 +21,19 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 
 NeoBundle 'altercation/vim-colors-solarized'
 
-"
-" " You can specify revision/branch/tag.
-" NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-"
-" " Required:
+
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
 call neobundle#end()
-"
-" " Required:
-" 
+
+" Required:
+
 filetype plugin indent on
-"
-" " If there are uninstalled bundles found on startup,
-" " this will conveniently prompt you to install them.
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
 NeoBundleCheck
 
 
@@ -58,4 +58,5 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 autocmd FileTYpe ruby,erb,sh,css,sass,html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileTYpe perl setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
