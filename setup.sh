@@ -23,6 +23,7 @@ mkdir -p ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 #cp NeoBundle.lock_changed ~/.vim/bundle/
 #cp NeoBundle.lock_changed ~/.vim/bundle/NeoBundle.lock
+ln -s $HOME/dotfiles/vim/NeoBundle.lock $HOME/.vim/bundle/NeoBundle.lock
 echo '-------------------------'
 echo "vim -c ':NeoBundleInstall'"
 echo '' 
