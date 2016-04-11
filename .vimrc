@@ -65,4 +65,4 @@ set softtabstop=2
 autocmd FileTYpe ruby,erb,sh,css,sass,html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileTYpe perl setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
-set mouse=a
+" set mouse=a
