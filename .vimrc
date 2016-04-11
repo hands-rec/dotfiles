@@ -21,6 +21,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 
 NeoBundle 'altercation/vim-colors-solarized'
 
+NeoBundle 'vim-scripts/taglist.vim'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -42,6 +43,10 @@ colorscheme solarized
 set background=dark
 " let g:solarized_termcolors=256
 let g:solarized_termtrans=1
+
+" vim-scripts/taglist.vim
+nnoremap <silent> <C-T> :TlistToggle<CR>
+let Tlist_GainFocus_On_ToggleOpen = 1
 
 
 " ctrlp
