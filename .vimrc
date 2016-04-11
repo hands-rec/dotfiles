@@ -46,6 +46,9 @@ let g:solarized_termtrans=1
 
 " ctrlp
 nnoremap <silent> <c-n> :CtrlPMRUFiles<CR>
+let g:ctrlp_max_files  = 500000
+let g:ctrlp_max_depth = 50
+let g:ctrlp_clear_cache_on_exit = 0
 
 
 set hlsearch
@@ -66,3 +69,5 @@ autocmd FileTYpe ruby,erb,sh,css,sass,html setlocal tabstop=2 shiftwidth=2 softt
 autocmd FileTYpe perl setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " set mouse=a
+
+set fileencodings=utf-8,euc-jp
