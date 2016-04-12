@@ -4,7 +4,10 @@
 # Setup Link
 # 
 echo 'Setup Link ----------'
-DOT_FILES=( .vimrc )
+DOT_FILES=( 
+  .vimrc 
+  .gitconfig .gitignore_global 
+)
 
 for file in ${DOT_FILES[@]}
 do
