@@ -5,6 +5,7 @@
 # 
 echo 'Setup Link ----------'
 DOT_FILES=( 
+  .bashrc 
   .vimrc 
   .gitconfig .gitignore_global 
 )
