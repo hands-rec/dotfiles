@@ -52,14 +52,13 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 
 
 " ctrlp
-"nnoremap <silent> <C-N> :CtrlPMRUFiles<CR>
-nnoremap <silent> <C-N> :CtrlPMixed<CR>
-"let g:ctrlp_map = '<c-p>'
-"let g:ctrlp_cmd = 'CtrlPMixed<'
+" history
+nnoremap <silent> <C-N> :CtrlPMRUFiles<CR>
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_max_files  = 500000
 let g:ctrlp_max_depth = 50
 let g:ctrlp_clear_cache_on_exit = 0
-
 
 set hlsearch
 set ignorecase
@@ -74,6 +73,8 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+
+autocmd BufNewFile,BufRead *.t      set filetype=perl
 
 autocmd FileTYpe ruby,erb,sh,css,sass,html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileTYpe perl setlocal tabstop=4 shiftwidth=4 softtabstop=4
