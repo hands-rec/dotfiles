@@ -23,6 +23,8 @@ NeoBundle 'altercation/vim-colors-solarized'
 
 NeoBundle 'vim-scripts/taglist.vim'
 
+NeoBundle 'vim-airline/vim-airline'
+
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
