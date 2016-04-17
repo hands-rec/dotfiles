@@ -74,6 +74,8 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
+set laststatus=2
+
 autocmd BufNewFile,BufRead *.t      set filetype=perl
 
 autocmd FileTYpe ruby,erb,sh,css,sass,html setlocal tabstop=2 shiftwidth=2 softtabstop=2
