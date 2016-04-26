@@ -8,6 +8,7 @@
 	ci = commit
 	br = branch
 	gr = log --graph --oneline --decorate --branches
+	grr = log --graph --oneline --decorate --branches --remotes
 	di = diff
 	df = diff
 	a = add
