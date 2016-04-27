@@ -9,6 +9,7 @@
 	br = branch
 	gr = log --graph --oneline --decorate --branches
 	grr = log --graph --oneline --decorate --branches --remotes
+  gra = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 	di = diff
 	df = diff
 	a = add
