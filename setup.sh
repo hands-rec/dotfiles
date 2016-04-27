@@ -8,6 +8,7 @@ DOT_FILES=(
   .bashrc 
   .vimrc 
   .gitconfig .gitignore_global 
+  .tmux.conf 
 )
 
 for file in ${DOT_FILES[@]}
