@@ -65,6 +65,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 let g:airline_section_a = airline#section#create(['mode','','branch'])
 let g:airline_branch_prefix = '    ¬'
 
+inoremap <silent> <C-E> <END>
 
 set hlsearch
 set ignorecase
