@@ -48,7 +48,7 @@ set background=dark
 let g:solarized_termtrans=1
 
 " vim-scripts/taglist.vim
-nnoremap <silent> <C-T> :TlistToggle<CR>
+"nnoremap <silent> <C-T> :TlistToggle<CR>
 let Tlist_GainFocus_On_ToggleOpen = 1
 
 
