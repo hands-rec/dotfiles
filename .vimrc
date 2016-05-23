@@ -25,6 +25,7 @@ NeoBundle 'vim-scripts/taglist.vim'
 
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'rking/ag.vim'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -68,6 +69,11 @@ nnoremap <silent> [Tab]h <C-w>h
 " ctrlp
 " history
 nnoremap <silent> <C-N> :CtrlPMRUFiles<CR>
+if executable('ag')
+  "let g:ctrlp_use_caching=0
+  let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
+  "let g:ctrlp_user_command = 'ag %s -l'
+endif
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_max_files  = 500000
