@@ -82,8 +82,6 @@ let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:30,results:30'
 
 " tpope/vim-fugitive
-# Source global definitions
-if [ -f /etc/bashrc ]; then
 let g:airline_section_a = airline#section#create(['mode','','branch'])
 let g:airline_branch_prefix = '    ¬'
 
