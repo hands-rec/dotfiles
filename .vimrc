@@ -26,6 +26,7 @@ NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'scrooloose/nerdtree'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -84,6 +85,9 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:30,results:30'
 " tpope/vim-fugitive
 let g:airline_section_a = airline#section#create(['mode','','branch'])
 let g:airline_branch_prefix = '    ¬'
+
+" scrooloose/nerdtree
+"nnoremap :tree :NERDTreeToggle
 
 inoremap <silent> <C-E> <END>
 
