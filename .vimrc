@@ -27,6 +27,9 @@ NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
+
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -88,6 +91,16 @@ let g:airline_branch_prefix = '    ¬'
 
 " scrooloose/nerdtree
 "nnoremap :tree :NERDTreeToggle
+
+
+" NeoBundle 'Shougo/unite.vim'
+nnoremap <silent> <Space>uf :<CR>
+nnoremap <silent> <Space>uo :Unite outline<CR>
+
+augroup QuickFixCmd
+  autocmd!
+  autocmd QuickFixCmdPost *grep* cwindow
+augroup END
 
 inoremap <silent> <C-E> <END>
 
