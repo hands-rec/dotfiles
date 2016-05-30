@@ -94,7 +94,9 @@ let g:airline_branch_prefix = '    ¬'
 
 
 " NeoBundle 'Shougo/unite.vim'
-nnoremap <silent> <Space>uf :<CR>
+nnoremap <silent> <Space>uf :<C-u>Unite file<CR>
+nnoremap <silent> <Space>ud :<C-u>UniteWithBufferDir -buffer-name=files file file/new<CR>
+nnoremap <silent> <Space>ub :<C-u>Unite buffer<CR>
 nnoremap <silent> <Space>uo :Unite outline<CR>
 
 augroup QuickFixCmd
