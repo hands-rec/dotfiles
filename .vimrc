@@ -70,6 +70,8 @@ nnoremap <silent> [Tab]k <C-w>k
 nnoremap <silent> [Tab]l <C-w>l
 nnoremap <silent> [Tab]h <C-w>h
 
+nnoremap <silent> [Tab]n :tabnew %<CR>
+
 " ctrlp
 " history
 nnoremap <silent> <C-N> :CtrlPMRUFiles<CR>
