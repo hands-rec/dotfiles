@@ -9,6 +9,11 @@ alias ll='ls -laG'
 alias be='bundle exec'
 alias ber='bundle exec ruby'
 
+# fzf
+alias gco='git co $(git br | fzf)'
+alias his='$(history | fzf)'
+alias cdf='cd $(ls | fzf)'
+
 # function
 function mkdircd () { mkdir -p "$@" && cd "$@"; }
 function fg () {
@@ -36,3 +41,5 @@ if [ -f ~/.bashrc.local ] ; then
   . ~/.bashrc.local
 fi
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
