@@ -30,6 +30,8 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 
+NeoBundle 'rhysd/accelerated-jk'
+
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -100,6 +102,11 @@ nnoremap <silent> <Space>uf :<C-u>Unite file<CR>
 nnoremap <silent> <Space>ud :<C-u>UniteWithBufferDir -buffer-name=files file file/new<CR>
 nnoremap <silent> <Space>ub :<C-u>Unite buffer<CR>
 nnoremap <silent> <Space>uo :Unite outline<CR>
+
+" NeoBundle 'rhysd/accelerated-jk'
+let g:accelerated_jk_acceleration_table = [35,15]
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
 
 augroup QuickFixCmd
   autocmd!
