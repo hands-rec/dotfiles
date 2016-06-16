@@ -21,7 +21,7 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 
 NeoBundle 'altercation/vim-colors-solarized'
 
-NeoBundle 'vim-scripts/taglist.vim'
+" NeoBundle 'vim-scripts/taglist.vim'
 
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
@@ -56,8 +56,8 @@ let g:solarized_termtrans=1
 
 " vim-scripts/taglist.vim
 "nnoremap <silent> <C-T> :TlistToggle<CR>
-nnoremap <silent> <space>tt   :TlistToggle<CR>
-let Tlist_GainFocus_On_ToggleOpen = 1
+"nnoremap <silent> <space>tt   :TlistToggle<CR>
+"let Tlist_GainFocus_On_ToggleOpen = 1
 
 nnoremap [Tab] <Nop>
 nmap t [Tab]
