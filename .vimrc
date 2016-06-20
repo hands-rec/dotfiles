@@ -59,20 +59,28 @@ let g:solarized_termtrans=1
 "nnoremap <silent> <space>tt   :TlistToggle<CR>
 "let Tlist_GainFocus_On_ToggleOpen = 1
 
-nnoremap [Tab] <Nop>
-nmap t [Tab]
-nnoremap <silent> [Tab]t :tabnew<CR>
-nnoremap <silent> [Tab]c :tablast <bar> tabnew<CR>
-nnoremap <silent> [Tab]x :tabclose<CR>
-nnoremap <silent> [Tab]n :tabnext<CR>
-nnoremap <silent> [Tab]p :tabprevious<CR>
+nnoremap <silent> <C-y> :tabnew<CR>
+nnoremap <silent> <C-l> :tabnext<CR>
+nnoremap <silent> <C-h> :tabprevious<CR>
 
-nnoremap <silent> [Tab]j <C-w>j
-nnoremap <silent> [Tab]k <C-w>k
-nnoremap <silent> [Tab]l <C-w>l
-nnoremap <silent> [Tab]h <C-w>h
+nnoremap <silent> <Space>n :tabnew %<CR>
 
-nnoremap <silent> [Tab]n :tabnew %<CR>
+nnoremap <F3> <C-w><C-]><C-w>T
+
+"nnoremap [Tab] <Nop>
+"nmap t [Tab]
+"nnoremap <silent> [Tab]t :tabnew<CR>
+"nnoremap <silent> [Tab]c :tablast <bar> tabnew<CR>
+"nnoremap <silent> [Tab]x :tabclose<CR>
+"nnoremap <silent> [Tab]n :tabnext<CR>
+"nnoremap <silent> [Tab]p :tabprevious<CR>
+"
+"nnoremap <silent> [Tab]j <C-w>j
+"nnoremap <silent> [Tab]k <C-w>k
+"nnoremap <silent> [Tab]l <C-w>l
+"nnoremap <silent> [Tab]h <C-w>h
+"
+"nnoremap <silent> [Tab]n :tabnew %<CR>
 
 " ctrlp
 " history
