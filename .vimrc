@@ -85,6 +85,7 @@ nnoremap <F3> <C-w><C-]><C-w>T
 " ctrlp
 " history
 nnoremap <silent> <C-N> :CtrlPMRUFiles<CR>
+nnoremap <silent> <C-I> :CtrlPBuffer<CR>
 if executable('ag')
   "let g:ctrlp_use_caching=0
   let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
