@@ -29,6 +29,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
+NeoBundle 'mileszs/ack.vim'
 
 NeoBundle 'rhysd/accelerated-jk'
 
