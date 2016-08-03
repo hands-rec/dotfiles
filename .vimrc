@@ -125,6 +125,10 @@ augroup END
 
 inoremap <silent> <C-E> <END>
 
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap [<Enter> []<Left><CR><ESC><S-o>
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+
 set hlsearch
 set ignorecase
 set smartcase
