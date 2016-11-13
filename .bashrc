@@ -20,6 +20,11 @@ function fg () {
   find ./ -type f -print | xargs grep "$1";
 }
 
+function vimppn () {
+  vim "./lib/${1//:://}.pm"
+}
+
+
 # git
 source ~/dotfiles/git-prompt.sh
 source ~/dotfiles/git-completion.bash
