@@ -192,7 +192,10 @@ endif
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 
-
+nnoremap J 5j
+nnoremap K 5k
+nnoremap L 5l
+nnoremap H 5h
 
 
 
