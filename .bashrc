@@ -14,6 +14,9 @@ alias gco='git co $(git br | fzf)'
 alias his='$(history | fzf)'
 alias cdf='cd $(ls | fzf)'
 
+# tmux
+alias tmuxa='tmux attach -t 0'
+
 # function
 function mkdircd () { mkdir -p "$@" && cd "$@"; }
 function fg () {
