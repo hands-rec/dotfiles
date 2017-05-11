@@ -1,3 +1,7 @@
 set diff-options = -m --first-parent
 set main-view = id date author commit-title:graph=yes,refs=yes
 set vertical-split = no
+
+# http://sue445.hatenablog.com/entry/2014/08/07/015811 
+bind main R !git rebase -i %(commit)^
+bind diff R !git rebase -i %(commit)^
