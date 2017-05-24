@@ -18,6 +18,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 " NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+"NeoBundle 'kien/ctrlp.vim'
 " NeoBundle 'flazz/vim-colorschemes'
 
 
