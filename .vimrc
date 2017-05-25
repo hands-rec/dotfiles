@@ -91,7 +91,8 @@ nnoremap <silent> <C-N> :CtrlPMRUFiles<CR>
 nnoremap <silent> <C-I> :CtrlPBuffer<CR>
 if executable('ag')
   "let g:ctrlp_use_caching=0
-  let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
+  "let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
+  let g:ctrlp_user_command='ag %s -S -i --nocolor --nogroup -g ""'
   "let g:ctrlp_user_command = 'ag %s -l'
 endif
 let g:ctrlp_map = '<c-p>'
