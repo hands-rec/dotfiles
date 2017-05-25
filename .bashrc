@@ -9,6 +9,7 @@ alias ll='ls -laG'
 alias be='bundle exec'
 alias ber='bundle exec ruby'
 
+alias sshconfig='cat ~/.ssh/config'
 # fzf
 alias gco='git co $(git br | fzf)'
 alias his='$(history | fzf)'
