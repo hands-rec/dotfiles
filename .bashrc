@@ -80,6 +80,7 @@ alias gfp='git fetch -p'
   cd `git rev-parse --show-toplevel`
 }
 
+alias gg='git grep -n'
 
 # Source local definitions
 if [ -f ~/.bashrc.local ] ; then
