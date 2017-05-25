@@ -106,7 +106,8 @@ let g:airline_section_a = airline#section#create(['mode','','branch'])
 let g:airline_branch_prefix = '    ¬'
 
 " scrooloose/nerdtree
-"nnoremap :tree :NERDTreeToggle
+nnoremap <silent> <Space>t :<C-u>NERDTreeToggle<CR>
+nnoremap <silent> <Space>f :<C-u>NERDTreeFind<CR>
 
 
 " NeoBundle 'Shougo/unite.vim'
