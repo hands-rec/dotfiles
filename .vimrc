@@ -108,7 +108,7 @@ let g:airline_branch_prefix = '    ¬'
 
 " scrooloose/nerdtree
 nnoremap <silent> <Space>t :<C-u>NERDTreeToggle<CR>
-nnoremap <silent> <Space>f :<C-u>NERDTreeFind<CR>
+nnoremap <silent> <C-A> :<C-u>NERDTreeFind<CR>
 
 
 " NeoBundle 'Shougo/unite.vim'
