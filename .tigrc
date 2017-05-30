@@ -5,3 +5,7 @@ set vertical-split = no
 # http://sue445.hatenablog.com/entry/2014/08/07/015811 
 bind main R !git rebase -i %(commit)^
 bind diff R !git rebase -i %(commit)^
+
+bind main c !git checkout %(branch)
+bind main o !git checkout -b %(branch) %(remote)/%(branch)
+bind main ! ?git branch -D %(branch)
