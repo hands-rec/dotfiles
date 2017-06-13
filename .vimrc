@@ -219,7 +219,8 @@ set smartcase
 syntax on
 set statusline=2
 set number
-set cursorline
+" too late
+"set cursorline
 set smartindent
 set autoindent
 set expandtab
