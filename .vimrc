@@ -34,6 +34,10 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'mileszs/ack.vim'
 
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-endwise'
+
+
 "NeoBundle 'rhysd/accelerated-jk'
 
 
