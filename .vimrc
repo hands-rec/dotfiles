@@ -245,3 +245,7 @@ autocmd FileTYpe perl setlocal tabstop=4 shiftwidth=4 softtabstop=4
 " set mouse=a
 
 set fileencodings=utf-8,euc-jp
+
+" run rspec
+nnoremap <silent> <Space>r :! bundle exec rspec %<CR>
+nnoremap <silent> <Space>rr :! bundle exec rspec <CR>
