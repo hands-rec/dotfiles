@@ -111,6 +111,7 @@ let g:airline_section_a = airline#section#create(['mode','','branch'])
 let g:airline_branch_prefix = '    ¬'
 
 " scrooloose/nerdtree
+let NERDTreeShowHidden=1
 nnoremap <silent> <Space>t :<C-u>NERDTreeToggle<CR>
 nnoremap <silent> <C-A> :<C-u>NERDTreeFind<CR>
 
