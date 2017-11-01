@@ -3,6 +3,8 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
+HISTSIZE=50000
+
 # User specific aliases and functions
 alias ll='ls -laG'
 
