@@ -249,6 +249,7 @@ set fileencodings=utf-8,euc-jp
 
 " run rspec
 nnoremap <silent> <Space>r :! bundle exec rspec %<CR>
+nnoremap <silent> <Space>rl :! bundle exec rspec %:<C-r>=line(".")<CR><CR>
 nnoremap <silent> <Space>rr :! bundle exec rspec <CR>
 
 " run rubocop
