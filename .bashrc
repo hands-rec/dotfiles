@@ -84,6 +84,7 @@ alias gfp='git fetch -p'
 }
 
 alias gg='git grep -n'
+alias ga='git add .'
 
 # Source local definitions
 if [ -f ~/.bashrc.local ] ; then
