@@ -8,6 +8,18 @@ HISTSIZE=50000
 # User specific aliases and functions
 alias ll='ls -laG'
 
+# ruby
+function r() {
+  echo "[RUN] rspec"
+  bundle exec rspec $1
+}
+function e() {
+  echo "[RUN] rubocop"
+  bundle exec rubocop
+}
+function er() {
+  e && r
+}
 alias be='bundle exec'
 alias ber='bundle exec ruby'
 
