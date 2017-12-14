@@ -67,12 +67,18 @@ let g:solarized_termtrans=1
 "let Tlist_GainFocus_On_ToggleOpen = 1
 
 nnoremap <silent> <C-y> :tabnew<CR>
-nnoremap <silent> <C-l> :tabnext<CR>
-nnoremap <silent> <C-h> :tabprevious<CR>
+"nnoremap <silent> <C-l> :tabnext<CR>
+"nnoremap <silent> <C-h> :tabprevious<CR>
 
 nnoremap <silent> <Space>n :tabnew %<CR>
 
 nnoremap <F3> <C-w><C-]><C-w>T
+
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 "nnoremap [Tab] <Nop>
 "nmap t [Tab]
