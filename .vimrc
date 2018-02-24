@@ -225,6 +225,9 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
+" http://koturn.hatenablog.com/entry/2015/08/03/095040
+cnoremap w!! w !sudo tee > /dev/null %
+
 set hlsearch
 set ignorecase
 set smartcase
