@@ -120,6 +120,7 @@ let g:airline_branch_prefix = '    ¬'
 
 " scrooloose/nerdtree
 let NERDTreeShowHidden=1
+let g:NERDTreeIgnore = ['\.swp$', '__pycache__']
 nnoremap <silent> <Space>t :<C-u>NERDTreeToggle<CR>
 nnoremap <silent> <C-A> :<C-u>NERDTreeFind<CR>
 
