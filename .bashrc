@@ -24,6 +24,13 @@ alias be='bundle exec'
 alias ber='bundle exec ruby'
 
 alias sshconfig='cat ~/.ssh/config'
+
+
+# docker / docker-compose
+alias dcps='docker-compose ps'
+alias docker-remove-container="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
+alias docker-remove-image="docker rmi $(docker images | grep "^<none>" | awk '{print $3}')"
+
 # fzf
 alias gco='git co $(git br | fzf)'
 alias his='$(history | fzf)'
