@@ -97,6 +97,21 @@ nnoremap <C-l> <C-w>l
 "
 "nnoremap <silent> [Tab]n :tabnew %<CR>
 
+
+" https://qiita.com/grohiro/items/e3dbcc93510bc8c4c812
+" nnoremap <C-m> :call ToggleWindowSize()<CR>
+" let g:toggle_window_size = 0
+" function! ToggleWindowSize()
+"   if g:toggle_window_size == 1
+"     exec "normal \<C-w>="
+"     let g:toggle_window_size = 0
+"   else
+"     :resize
+"     :vertical resize
+"     let g:toggle_window_size = 1
+"   endif
+" endfunction
+
 " ctrlp
 " history
 nnoremap <silent> <C-N> :CtrlPMRUFiles<CR>
