@@ -264,6 +264,7 @@ set softtabstop=2
 set backspace=indent,eol,start
 
 set laststatus=2
+set completeopt=menuone
 
 autocmd BufNewFile,BufRead *.t      set filetype=perl
 
