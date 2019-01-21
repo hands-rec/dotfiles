@@ -30,6 +30,9 @@ alias sshconfig='cat ~/.ssh/config'
 alias dcps='docker-compose ps'
 alias docker-remove-container="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 alias docker-remove-image="docker rmi $(docker images | grep "^<none>" | awk '{print $3}')"
+# for macos
+# https://stackoverflow.com/questions/40080887/how-do-i-restart-docker-for-mac-from-the-terminal/44555371#44555371
+alias docker_restart="osascript -e 'quit app \"Docker\"' && open -a Docker"
 
 # fzf
 alias gco='git co $(git br | fzf)'
