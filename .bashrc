@@ -110,6 +110,7 @@ alias gfp='git fetch -p'
 
 alias gg='git grep -n'
 alias ga='git add .'
+alias gaa='git ci --amend'
 
 # Source local definitions
 if [ -f ~/.bashrc.local ] ; then
