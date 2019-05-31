@@ -71,6 +71,7 @@ fd() {
 # fzf x ghq
 alias gd='cd $(ghq root)/$(ghq list | fzf)'
 alias gp='hub browse $(ghq list | fzf | cut -d "/" -f 2,3)'
+alias gpc='hub browse'
 
 
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
