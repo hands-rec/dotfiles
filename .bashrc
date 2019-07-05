@@ -106,6 +106,7 @@ alias gfp='git fetch -p'
 
 ..g() {
   cd `git rev-parse --show-toplevel`
+  pwd
 }
 
 alias gg='git grep -n'
