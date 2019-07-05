@@ -70,8 +70,8 @@ fd() {
 
 # fzf x ghq
 alias gd='cd $(ghq root)/$(ghq list | fzf)'
-alias gp='hub browse $(ghq list | fzf | cut -d "/" -f 2,3)'
-alias gpc='hub browse'
+alias gpp='hub browse $(ghq list | fzf | cut -d "/" -f 2,3)'
+alias gp='hub browse'
 
 
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
@@ -111,6 +111,7 @@ alias gfp='git fetch -p'
 alias gg='git grep -n'
 alias ga='git add .'
 alias gaa='git ci --amend'
+alias gcb='git co -b $(git br -r | fzf)'
 
 # Source local definitions
 if [ -f ~/.bashrc.local ] ; then
