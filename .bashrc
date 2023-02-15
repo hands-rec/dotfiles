@@ -69,9 +69,10 @@ fd() {
 }
 
 # fzf x ghq
-alias gd='cd $(ghq root)/$(ghq list | fzf)'
+#alias gd='cd $(ghq root)/$(ghq list | fzf)'
+alias gd='cd $(ghq list --full-path | fzf)'
 alias gpp='hub browse $(ghq list | fzf | cut -d "/" -f 2,3)'
-alias gp='hub browse'
+alias hb='hub browse'
 
 
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
@@ -109,10 +110,28 @@ alias gfp='git fetch -p'
   pwd
 }
 
+alias g='git'
+alias gp='git pull'
 alias gg='git grep -n'
 alias ga='git add .'
 alias gaa='git ci --amend'
 alias gcb='git co -b $(git br -r | fzf)'
+
+
+alias c='code'
+alias c.='code .'
+
+## kubernetes
+## https://ahmet.im/blog/kubectl-aliases/index.html
+alias k='kubectl'
+alias kg='kubectl get'
+alias kgdep='kubectl get deployment'
+alias ksys='kubectl --namespace=kube-system'
+alias kd='kubectl describe'
+
+## firebase
+alias ft="npm run lint && npm run build && firebase emulators:exec 'npm run test'"
+
 
 # Source local definitions
 if [ -f ~/.bashrc.local ] ; then
@@ -121,3 +140,7 @@ fi
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+complete -C /usr/local/bin/terraform terraform

@@ -14,8 +14,26 @@
 	di = diff
 	df = diff
 	a = add
+  rc = rebase --continue
 [include]
     path = ~/.gitconfig.local
 [ghq]
   root = ~/.ghq
   root = ~/go/src
+[pull]
+  rebase = true
+  #rebase = false
+  #ff = only
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[pager]
+  log = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less
+[user]
+	name = Hiroki Shimamoto
+	email = hands.records@gmail.com
