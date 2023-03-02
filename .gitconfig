@@ -17,9 +17,9 @@
   rc = rebase --continue
 [include]
     path = ~/.gitconfig.local
-[ghq]
-  root = ~/.ghq
-  root = ~/go/src
+# [ghq]
+#   root = ~/.ghq
+#   root = ~/go/src
 [pull]
   rebase = true
   #rebase = false
